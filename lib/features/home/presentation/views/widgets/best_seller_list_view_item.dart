@@ -51,7 +51,6 @@ class BestSellerListViewItem extends StatelessWidget {
                   ),
                 ),
                 Row(
-                  spacing: 50,
                   children: [
                     Text(
                       '19.99 €',
@@ -59,7 +58,7 @@ class BestSellerListViewItem extends StatelessWidget {
                         fontWeight: FontWeight.bold,
                       ),
                     ),
-
+                    Spacer(),
                     const BookRating(),
                   ],
                 ),
