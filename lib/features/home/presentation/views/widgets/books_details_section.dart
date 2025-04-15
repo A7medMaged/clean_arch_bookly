@@ -24,15 +24,15 @@ class BookDetailsSection extends StatelessWidget {
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
         ),
-        const SizedBox(height: 6),
+        const SizedBox(height: 4),
         Opacity(
-          opacity: .7,
+          opacity: 0.7,
           child: Text(
             'J.K. Rowling',
             style: Styles.textStyle18.copyWith(fontWeight: FontWeight.w500),
           ),
         ),
-        const SizedBox(height: 18),
+        const SizedBox(height: 14),
         const BookRating(mainAxisAlignment: MainAxisAlignment.center),
         const SizedBox(height: 37),
         const BooksAction(),
