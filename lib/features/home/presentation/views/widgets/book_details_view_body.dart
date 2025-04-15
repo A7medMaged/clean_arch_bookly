@@ -1,7 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+
 import 'books_details_section.dart';
 import 'custom_book_details_app_bar';
+import 'similar_books_section.dart';
 
 class BookDetailsViewBody extends StatelessWidget {
   const BookDetailsViewBody({super.key});
@@ -18,7 +20,9 @@ class BookDetailsViewBody extends StatelessWidget {
               children: const [
                 CustomBookDetailsAppBar(),
                 BookDetailsSection(),
-                Expanded(child: SizedBox(height: 50)),
+                SizedBox(height: 40),
+                SimilarBooksSection(),
+                SizedBox(height: 40),
               ],
             ),
           ),
