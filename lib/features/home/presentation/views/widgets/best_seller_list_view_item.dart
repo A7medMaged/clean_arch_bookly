@@ -13,6 +13,7 @@ class BestSellerListViewItem extends StatelessWidget {
     return SizedBox(
       height: 125,
       child: Row(
+        spacing: 30,
         children: [
           AspectRatio(
             aspectRatio: 2.5 / 4,
@@ -27,10 +28,10 @@ class BestSellerListViewItem extends StatelessWidget {
               ),
             ),
           ),
-          SizedBox(width: 20),
+
           Expanded(
             child: Column(
-              spacing: 5,
+              spacing: 3,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 SizedBox(
@@ -45,10 +46,12 @@ class BestSellerListViewItem extends StatelessWidget {
                 Text(
                   'J.K. Rowling',
                   style: Styles.textStyle14.copyWith(
+                    // ignore: deprecated_member_use
                     color: kWhiteColor.withOpacity(0.7),
                   ),
                 ),
                 Row(
+                  spacing: 50,
                   children: [
                     Text(
                       '19.99 €',
@@ -56,7 +59,7 @@ class BestSellerListViewItem extends StatelessWidget {
                         fontWeight: FontWeight.bold,
                       ),
                     ),
-                    SizedBox(width: 75),
+
                     const BookRating(),
                   ],
                 ),
