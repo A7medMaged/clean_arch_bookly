@@ -8,10 +8,9 @@ import 'package:bookly_ca/features/home/domain/repos/home_repo.dart';
 class FetchFeaturedBooksUseCase extends UseCase<List<BookEntity>, NoParam> {
   final HomeRepo homeRepo;
   FetchFeaturedBooksUseCase(this.homeRepo);
-  
-  @override
-  Future<Either<Failure, List<BookEntity>>> call([NoParam? param]) async{
-    return await homeRepo.fetchFeaturedBooks();
 
+  @override
+  Future<Either<Failure, List<BookEntity>>> call([NoParam? param]) async {
+    return await homeRepo.fetchFeaturedBooks();
   }
 }
