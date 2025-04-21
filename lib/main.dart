@@ -1,6 +1,7 @@
 import 'package:bookly_ca/core/helper/app_router.dart';
 import 'package:bookly_ca/core/helper/constants.dart';
 import 'package:bookly_ca/core/helper/functions/service_locator.dart';
+import 'package:bookly_ca/core/helper/simple_bloc_observer.dart';
 import 'package:bookly_ca/features/home/data/repos/home_repo_impl.dart';
 import 'package:bookly_ca/features/home/domain/entities/book_entity.dart';
 import 'package:bookly_ca/features/home/domain/use_cases/fetch_featured_books_use_case.dart';
@@ -18,9 +19,9 @@ void main() async {
   serviceLocator();
   await Hive.openBox(kFeaturedBox);
   await Hive.openBox(kNewestBox);
+  Bloc.observer = SimpleBlocObserver();
   runApp(const BooklyApp());
 }
-
 
 class BooklyApp extends StatelessWidget {
   const BooklyApp({super.key});
