@@ -2,7 +2,7 @@ import 'package:bookly_ca/core/helper/assets.dart';
 import 'package:bookly_ca/core/helper/styles.dart';
 import 'package:flutter/material.dart';
 
-import 'book_rating.dart';
+import 'book_page.dart';
 import 'books_action.dart';
 
 class BookDetailsSection extends StatelessWidget {
